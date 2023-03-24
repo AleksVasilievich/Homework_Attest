@@ -21,8 +21,8 @@ class Input_notes:
             notes = (id_str + ';' + head_n + ';' + body_n + ';' + date_n + '\n')
             global read_notes
             read_notes = notes
-            return [notes, read_notes], print(read_notes), print(
-                'СОХРАНИТЬ ДАННЫЕ ???-- НАЖМИТЕ --  2 -- ИЛИ ДАННЫЕ БУДУТ ПОТЕРЯНЫ !!!')
+            print(read_notes), print('СОХРАНИТЬ ДАННЫЕ ???-- НАЖМИТЕ --  2 -- ИЛИ ДАННЫЕ БУДУТ ПОТЕРЯНЫ !!!')
+            return notes
         except Exception:
             er.error_notes()
 
