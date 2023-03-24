@@ -1,8 +1,8 @@
+from Menu import Menu
+
 class Main:
 
     if __name__=='__main__':
 
-        print("Программа - Заметки")
-        print(
-            "Введите ___ 1 - создать ; 2 - сохранить ; 3 - читать ; 4 - читать по ID; 5 - редоктировать ; 6 - удалить ; 7 - выход")
-        comand = input()
+        m1 = Menu()
+        m1.menu()
