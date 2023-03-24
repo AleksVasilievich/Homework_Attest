@@ -2,7 +2,7 @@ from Menu import Menu
 
 class Main:
 
-    read_notes = ''
+    # read_notes = ''
 
     if __name__=='__main__':
 

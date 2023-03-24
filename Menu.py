@@ -4,8 +4,10 @@ from Save import Save
 from View import  View
 from Read_id import Read_id
 from Delete import Delete
+from Exit import Exit
 class Menu:
     def menu(self):
+        ex = Exit()
         dl = Delete()
         rd = Read_id()
         vi = View()
@@ -37,9 +39,7 @@ class Menu:
             print(6)
             dl.delete_notes()
         elif comand == '7':
-            print(7)
-
-                # exit_notes()
+            ex.exit_notes()
             # elif comand == '8':
             #     deletes_notes()
         else:
