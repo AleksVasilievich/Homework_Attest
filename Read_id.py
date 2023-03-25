@@ -10,7 +10,7 @@ class Read_id:
         vi = View()
         try:
             arr = vi.view_id()
-            temp = input(' Если УВЕРЕНЫ введите номер ID ->   ')
+            temp = input(' Введите номер ID ->   ')
             temp_id = arr.index(temp)
             array = list()
             array1 = list()

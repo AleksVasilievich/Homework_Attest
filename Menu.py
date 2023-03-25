@@ -25,18 +25,14 @@ class Menu:
         if comand == '1':
             se.save_notes(self), self.menu()
         elif comand == '2':
-            print(3)
             re.reads_notes(), self.menu()
         elif comand == '3':
-            print(4)
             rd.read_id_notes(), self.menu()
         elif comand == '4':
-            print(5)
             vi.view_id()
             # edit_notes()
         elif comand == '5':
-            print(6)
-            dl.delete_notes()
+            dl.delete_notes(), self.menu()
         elif comand == '6':
             ex.exit_notes()
         else:
