@@ -24,6 +24,6 @@ class Delete:
                 with open('data.csv', 'w', encoding='utf_8') as file:
                     for i in array:
                         file.writelines('%s\n' % i)
-                print()
+                print('Эти данные удалены !!!')
         except Exception:
             er.error_notes()

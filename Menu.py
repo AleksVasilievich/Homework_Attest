@@ -5,12 +5,12 @@ from View import View
 from Read_id import Read_id
 from Delete import Delete
 from Exit import Exit
-
+from Edit import Edit
 
 class Menu:
 
     def menu(self):
-
+        ed = Edit()
         ex = Exit()
         dl = Delete()
         rd = Read_id()
@@ -29,8 +29,8 @@ class Menu:
         elif comand == '3':
             rd.read_id_notes(), self.menu()
         elif comand == '4':
-            vi.view_id()
-            # edit_notes()
+            # vi.view_id()
+            ed.edit(),  self.menu()
         elif comand == '5':
             dl.delete_notes(), self.menu()
         elif comand == '6':

@@ -8,6 +8,7 @@ class Read:
         try:
             with open('data.csv', 'r', encoding='utf_8') as file:
                 return print(file.read())
+
         except Exception:
-            print('er')
+            print("red")
             er.error_notes()
