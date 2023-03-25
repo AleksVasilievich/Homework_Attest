@@ -1,5 +1,10 @@
-from  Error_notes import Error_notes
-class Read:
+from Error_notes import Error_notes
+from Notes import Notes
+
+
+class Read(Notes):
+    def __init__(self):
+        super().__init__()
 
     def reads_notes(self):
         er = Error_notes()

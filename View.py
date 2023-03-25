@@ -1,4 +1,10 @@
-class View:
+from Notes import Notes
+
+
+class View(Notes):
+    def __init__(self):
+        super().__init__()
+
     def view_id(self):
         a = ''
         array = list()

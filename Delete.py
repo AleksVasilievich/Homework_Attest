@@ -1,7 +1,13 @@
+from Notes import Notes
 from Read_id import Read_id
 from Read import Read
 from Error_notes import Error_notes
-class Delete:
+
+
+class Delete(Notes):
+    def __init__(self):
+        super().__init__()
+
     def delete_notes(self):
         er = Error_notes()
         rd = Read_id()
