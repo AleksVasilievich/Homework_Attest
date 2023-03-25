@@ -1,3 +1,5 @@
+import csv
+
 from Read import Read
 from Read_id import Read_id
 from View import View
@@ -13,6 +15,7 @@ class Edit:
         temp_id = arr.index(temp)
         array = list()
         array1 = list()
+        array2 = list()
         print(temp_id)
         with open('data.csv', 'r', encoding='utf_8') as file:
             array.append(file.read().split())
@@ -20,7 +23,36 @@ class Edit:
                 array1.append(i)
         print(array1[temp_id])
         print("Редактировать Заголовок - 1 ; Текст заметки - 2 ")
-        # temp1 = input()
-        # if temp1 == '1':
+        lst_notes = ''
+        for i in array1[temp_id]:
+            if i != ';':
+                lst_notes = lst_notes + i
+                if i == ';':
+                    break
+                break
+            break
+
+        lst_notes = lst_notes + ';' + '' + ';' + '' +';'
+
+
+
+        print(lst_notes)
+
+
+
+
+
+        # with open('data.csv', 'r') as f:
+        #     incl_col = [1, 2]
+        #     data1 = []
+        #     reader = csv.reader(f, delimiter=";")
+        #     for row in reader:
+        #         col = list(row[i] for i in incl_col)
+        #         print(col)
+        #         data1.append(col)
+        #
+        # with open('data1.csv', 'w') as f:
+        #     writer = csv.writer(f, delimiter=";")
+        #     writer.writerows(data1)
 
         # return
