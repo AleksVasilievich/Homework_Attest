@@ -1,25 +1,17 @@
 from datetime import datetime
-
+# from Menu import Menu
 from Notes import Notes
 from View import View
 from Error_notes import Error_notes
 
 
 class Input_notes:
-    def __init__(self):
-        super().__init__()
-    # def get(self):
-    #     return self.read_notes
-
-    # def __init__(self):
-    #    self.read_notes = read_notes
-
-    # def get(self):
-    #     return self.read_notes
 
     def input_notes(self):
+        # m = Menu()
         er = Error_notes()
         vi = View()
+
         array2 = vi.view_id()
         try:
 
@@ -37,12 +29,12 @@ class Input_notes:
             global read_notes
             read_notes = notes
             print('СОХРАНИТЬ ДАННЫЕ ???-- НАЖМИТЕ --  2 -- ИЛИ ДАННЫЕ БУДУТ ПОТЕРЯНЫ !!!')
-            return read_notes
+            temp = input()
+            if temp == '2':
+                return read_notes
+            else:
+                print('ДАННЫЕ НЕ СОХРАНЕНЫ  !!!')
+                # m.menu()
+
         except Exception:
             er.error_notes()
-
-    # def get(self):
-    #     self.read_notes = read_notes
-    #
-    # def set(self):
-    #     self.read_notes = read_notes

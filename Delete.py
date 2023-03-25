@@ -18,7 +18,7 @@ class Delete(Notes):
                 with open('data.csv', 'w', encoding='utf_8') as file:
                     file.write('')
                     print('Ваши данные успешно сохранены !!!')
-                    global read_notes
+                    # global read_notes
                     # read_notes = ''
             elif l_notes == '2':
                 array1 = rd.read_id_notes()[0]

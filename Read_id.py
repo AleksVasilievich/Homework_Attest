@@ -3,10 +3,7 @@ from View import View
 from Error_notes import Error_notes
 
 
-class Read_id(Notes):
-
-    def __init__(self):
-        super().__init__()
+class Read_id:
 
     def read_id_notes(self):
         er = Error_notes()
