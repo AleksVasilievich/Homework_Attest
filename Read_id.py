@@ -1,4 +1,3 @@
-from Notes import Notes
 from View import View
 from Error_notes import Error_notes
 

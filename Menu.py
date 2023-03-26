@@ -1,5 +1,4 @@
 from Read import Read
-from Input_notes import Input_notes
 from Save import Save
 from View import View
 from Read_id import Read_id
@@ -7,6 +6,8 @@ from Delete import Delete
 from Exit import Exit
 from Edit import Edit
 from Deletes import Deletes
+
+
 class Menu:
 
     def menu(self):
@@ -38,5 +39,5 @@ class Menu:
         elif comand == '7':
             ex.exit_notes()
         else:
-            print("Error else")
+            print("Поверьте вводимые данные")
         return comand

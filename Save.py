@@ -1,4 +1,3 @@
-from Exit import Exit
 from Input_notes import Input_notes
 
 
@@ -13,6 +12,5 @@ class Save:
                 file.write(notes)
                 print('Ваши данные успешно сохранены !!!')
                 print(notes)
-                # ex.exit_notes()
         except Exception:
             print("Создайте чтобы сохранить !!!")

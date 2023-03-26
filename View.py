@@ -1,9 +1,4 @@
-from Notes import Notes
-
-
-class View(Notes):
-    def __init__(self):
-        super().__init__()
+class View:
 
     def view_id(self):
         a = ''

@@ -10,5 +10,4 @@ class Read:
                 return print(file.read())
 
         except Exception:
-            print("red")
             er.error_notes()

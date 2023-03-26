@@ -1,6 +1,3 @@
-from Error_notes import Error_notes
-
-
 class Deletes:
     def deletes(self):
         try:
@@ -10,5 +7,7 @@ class Deletes:
                 with open('data.csv', 'w', encoding='utf_8') as file:
                     file.write('')
                 print('Ваши данные успешно удалены !!!')
+            else:
+                print('NO COMAND !!!')
         except Exception:
-            print('Error')
+            print('NO COMAND !!!')

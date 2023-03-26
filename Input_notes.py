@@ -1,6 +1,4 @@
 from datetime import datetime
-# from Menu import Menu
-from Notes import Notes
 from View import View
 from Error_notes import Error_notes
 
@@ -8,7 +6,6 @@ from Error_notes import Error_notes
 class Input_notes:
 
     def input_notes(self):
-        # m = Menu()
         er = Error_notes()
         vi = View()
 
@@ -23,7 +20,6 @@ class Input_notes:
             id_str = str(id_int)
             head_n = input('Введите заголовок ->  ')
             body_n = input('Введите текст заметки ->  ')
-            # date_n = input('Введите дату ->  ')
             date_n = str(datetime.now().strftime("%d.%m.%Y-%H:%M:%S"))
             notes = (id_str + ';' + head_n + ';' + body_n + ';' + date_n + '\n')
             global read_notes
@@ -34,7 +30,6 @@ class Input_notes:
                 return read_notes
             else:
                 print('ДАННЫЕ НЕ СОХРАНЕНЫ  !!!')
-                # m.menu()
 
         except Exception:
             er.error_notes()
